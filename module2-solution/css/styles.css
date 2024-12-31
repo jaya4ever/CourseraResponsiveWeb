@@ -10,6 +10,7 @@ body {
 }
 
 header {
+    font-family:Arial, Helvetica, sans-serif;
     text-align: center;
     margin: 20px 0;
 }
@@ -22,63 +23,49 @@ main {
 }
 
 .menu-item {
-    border: 1px solid black;
-    padding: 10px;
-    background-color: #f4f4f4;
     position: relative;
-}
-.chicken-title{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #e878a5;
-    padding: 5px;
-    font-weight: bold;
+    padding: 2rem;
     border: 1px solid black;
-}
-.beef-title {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #55c6a8;
-    padding: 5px;
-    font-weight: bold;
-    border: 1px solid black;
-    
-}
-.shushi-title {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #5c5fe2;
-    padding: 5px;
-    font-weight: bold;
-    border: 1px solid black;
-    
-}
-header h1 {
-    font-size: 2em;
+
 }
 
-.title {
-    font-size: 1.25em;
+.chicken-title,
+.beef-title,
+.sushi-title {
+
+    position: absolute;
+    top: .10px;
+    right: 0px;
+    width: 7rem;
+    text-align:center;
+    font-weight: bold;
+    padding: 2px 2px 2px;
+    font-weight: bold;
+    border: 1px solid black;
+    color: white;
+    background-color: #4fab2b;
+}
+
+.beef-title {
+    background-color: rgb(245, 73, 73)
+}
+
+.sushi-title {
+    background-color: #f8d020;
 }
 #chicken {
-    background-color: #ffe5e5;
+    background-color: #daece2
 }
 
 #beef {
-    background-color: #e5ffe5;
+    background-color: #eed1d1;
 }
 
 #sushi {
-    background-color: #e5e5ff;
+    background-color: #ecf2cf;
 }
 
-.title {
-    background-color: #ccc;
-}
-
+/* Responsive Design */
 @media (min-width: 992px) {
     .menu-item {
         width: 32%;
